@@ -50,14 +50,17 @@ const SubText = styled.div`
     font-size: 22px;
 `;
 
-
+const MainImage = styled.img`
+    border: 2px solid lightgray;
+    box-shadow: 0px 0px 24px;
+`;
 
 export function Info() {
     return (
         <InfoWrapper>
             <GridLayout>
                 <ImageHolder>
-                <img src={MainPic} alt="main-pic" width="90%" />
+                <MainImage src={MainPic} alt="main-pic" width="90%" />
                 </ImageHolder>
                 <div>
                     <TitleText>We can help you obtaining the pediatric information you need immediately.</TitleText>
